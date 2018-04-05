@@ -11,12 +11,9 @@ class CppJwtConan(ConanFile):
     url = "https://github.com/DEGoodmanWilson/conan-cpp-jwt"
     description = "A C++ library for handling JWT tokens"
     license = "https://github.com/arun11299/cpp-jwt/blob/master/LICENSE"
-    exports_sources = "sources/include/*"
     no_copy_source = True
-    #use static org/channel for libs in conan-center
-    #use version ranges for dependencies unless there's a reason not to
+    build_policy = "always"
     requires = "OpenSSL/1.0.2n@conan/stable", "jsonformoderncpp/[~= 3.1]@vthiery/stable"
-    generators = "cmake"
 
     def source(self):
         source_url = "https://github.com/arun11299/cpp-jwt"
@@ -24,8 +21,6 @@ class CppJwtConan(ConanFile):
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, "sources")
         #Rename to "sources" is a convention to simplify later steps
-        # self.run("git clone https://github.com/arun11299/cpp-jwt.git sources")
-
 
     def package_id(self):
         self.info.header_only()
