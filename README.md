@@ -1,5 +1,5 @@
 [ ![Download](https://api.bintray.com/packages/DEGoodmanWilson/opensource/cpp-jwt%3ADEGoodmanWilson/images/download.svg) ](https://bintray.com/DEGoodmanWilson/opensource/cpp-jwt%3ADEGoodmanWilson/_latestVersion)
-[![Build Status](https://travis-ci.org/DEGoodmanWilson/conan-cpp-jwt.svg?branch=stable%2F1.0)](https://travis-ci.org/DEGoodmanWilson/conan-cpp-jwt)
+[![Build Status](https://travis-ci.org/DEGoodmanWilson/conan-cpp-jwt.svg?branch=stable%2F1.0.1)](https://travis-ci.org/DEGoodmanWilson/conan-cpp-jwt)
 [![Build status](https://ci.appveyor.com/api/projects/status/sxs9n6vb8nqa92l5?svg=true)](https://ci.appveyor.com/project/DEGoodmanWilson/conan-cpp-jwt)
 
 [Conan.io](https://conan.io) package for [cpp-jwt](https://github.com/someauthor/cpp-jwt) project
@@ -10,14 +10,14 @@ The packages generated with this **conanfile** can be found in [Bintray](https:/
 
 ### Basic setup
 
-    $ conan install cpp-jwt/1.0@DEGoodmanWilson/stable
+    $ conan install cpp-jwt/1.0.1@DEGoodmanWilson/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    cpp-jwt/1.0@DEGoodmanWilson/stable
+    cpp-jwt/1.0.1@DEGoodmanWilson/stable
 
     [generators]
     txt
@@ -48,7 +48,7 @@ The following command both runs all the steps of the conan file, and publishes t
 
 ## Upload
 
-    $ conan upload cpp-jwt/1.0@DEGoodmanWilson/stable --all -r DEGoodmanWilson
+    $ conan upload cpp-jwt/1.0.1@DEGoodmanWilson/stable --all -r DEGoodmanWilson
 
 ## License
 [LICENSE_TYPE](LICENSE.md)
