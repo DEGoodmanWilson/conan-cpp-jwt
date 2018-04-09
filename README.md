@@ -1,10 +1,8 @@
-[ ![Download](https://api.bintray.com/packages/DEGoodmanWilson/opensource/cpp-jwt%3ADEGoodmanWilson/images/download.svg) ](https://bintray.com/DEGoodmanWilson/opensource/cpp-jwt%3ADEGoodmanWilson/_latestVersion)
-[![Build Status](https://travis-ci.org/DEGoodmanWilson/conan-cpp-jwt.svg?branch=stable%2F1.0.1)](https://travis-ci.org/DEGoodmanWilson/conan-cpp-jwt)
-[![Build status](https://ci.appveyor.com/api/projects/status/sxs9n6vb8nqa92l5?svg=true)](https://ci.appveyor.com/project/DEGoodmanWilson/conan-cpp-jwt)
+[ ![Download](https://api.bintray.com/packages/degoodmanwilson/opensource/cpp-jwt%3ADEGoodmanWilson/images/download.svg) ](https://bintray.com/degoodmanwilson/opensource/cpp-jwt%3ADEGoodmanWilson/_latestVersion)
 
 [Conan.io](https://conan.io) package for [cpp-jwt](https://github.com/someauthor/cpp-jwt) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/DEGoodmanWilson/opensource/cpp-jwt%3ADEGoodmanWilson).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/degoodmanwilson/opensource/cpp-jwt%3ADEGoodmanWilson).
 
 ## For Users: Use this package
 
