@@ -13,11 +13,7 @@ class CppJwtConan(ConanFile):
     license = "https://github.com/arun11299/cpp-jwt/blob/master/LICENSE"
     no_copy_source = True
     build_policy = "always"
-    requires = "jsonformoderncpp/[~= 3.1]@vthiery/stable"
-
-    def requirements(self):
-        if not tools.os_info.is_macos and not tools.os_info.is_windows:
-            self.requires.add("OpenSSL/1.0.2n@conan/stable")
+    requires = "OpenSSL/1.0.2n@conan/stable", "jsonformoderncpp/[~= 3.1]@vthiery/stable"
 
     def source(self):
         source_url = "https://github.com/arun11299/cpp-jwt"
@@ -32,8 +28,3 @@ class CppJwtConan(ConanFile):
     def package(self):
         self.copy(pattern="LICENSE")
         self.copy(pattern="*.[i|h]pp", dst="include", src="sources/include", keep_path=True)
-
-    def package_info(self):
-        if tools.os_info.is_macos:
-            self.cpp_info.exelinkflags = ['-framework CoreFoundation', '-framework Security']
-            self.cpp_info.sharedlinkflags = self.cpp_info.exelinkflags
